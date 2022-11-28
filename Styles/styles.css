@@ -1137,23 +1137,26 @@ section {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
-  .contact-info {
+  .contact-container {
+    padding-bottom: 5rem;
+  }
+  .contact-container .contact-info {
     font-size: 14px;
   }
-  .contact-info .contact-item .icon {
+  .contact-container .contact-info .contact-item .icon {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     gap: 10px;
     width: 100%;
   }
-  .contact-info .contact-item .icon i {
+  .contact-container .contact-info .contact-item .icon i {
     font-size: 13px;
   }
-  .contact-info .contact-item p {
+  .contact-container .contact-info .contact-item p {
     width: 100%;
   }
-  .contact-info .contact-item p span {
+  .contact-container .contact-info .contact-item p span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1161,7 +1164,7 @@ section {
         -ms-flex-align: center;
             align-items: center;
   }
-  .contact-icons .contact-icon {
+  .contact-container .contact-icons .contact-icon {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
