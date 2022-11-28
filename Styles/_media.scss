@@ -182,7 +182,7 @@
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:600px){
     .section{
         padding: 7rem 3rem;
     }
@@ -203,9 +203,30 @@
         }
     }
     .contact-info{
-        background-color: red;
+        font-size: 14px;
         .contact-item{
-            background-color: blue;
+           
+            .icon{
+                display: flex !important;
+                gap: 10px;
+                width: 100%;
+                i{
+                    font-size: 13px;
+                }
+            }
+            p{
+                width: 100%;
+                span{
+                    display: flex;
+                    align-items: center; 
+                }
+            }
+        }
+    }
+    .contact-icons{
+        .contact-icon{
+            display: flex !important;
+            justify-content: space-between;
         }
     }
 }

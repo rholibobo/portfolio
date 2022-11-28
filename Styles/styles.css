@@ -1120,7 +1120,7 @@ section {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .section {
     padding: 7rem 3rem;
   }
@@ -1138,10 +1138,36 @@ section {
     font-size: 4rem;
   }
   .contact-info {
-    background-color: red;
+    font-size: 14px;
   }
-  .contact-info .contact-item {
-    background-color: blue;
+  .contact-info .contact-item .icon {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    gap: 10px;
+    width: 100%;
+  }
+  .contact-info .contact-item .icon i {
+    font-size: 13px;
+  }
+  .contact-info .contact-item p {
+    width: 100%;
+  }
+  .contact-info .contact-item p span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-icons .contact-icon {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=styles.css.map */
