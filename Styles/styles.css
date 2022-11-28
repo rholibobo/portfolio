@@ -474,19 +474,19 @@ section {
 }
 
 .about-stats .progress-bars .progress-con .progress .javascript {
-  width: 90%;
+  width: 85%;
 }
 
 .about-stats .progress-bars .progress-con .progress .react {
-  width: 90%;
+  width: 80%;
 }
 
 .about-stats .progress-bars .progress-con .progress .node {
-  width: 90%;
+  width: 70%;
 }
 
 .about-stats .progress-bars .progress-con .progress .db {
-  width: 90%;
+  width: 70%;
 }
 
 .stat-title {
