@@ -215,9 +215,9 @@
     .contact-container{
         padding-bottom: 5rem;
         .contact-info{
-            font-size: 14px;
+            
             .contact-item{
-               
+                font-size: 15px;
                 .icon{
                     display: flex !important;
                     gap: 10px;
@@ -241,6 +241,10 @@
                 justify-content: space-between;
             }
         }
+    }
+    .portfolios{
+        display: flex !important;
+        flex-direction: column;
     }
     
 }
