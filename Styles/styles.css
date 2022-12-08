@@ -634,6 +634,12 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.portfolios .portfolio-item .hover-items p {
+  font-size: 0.65rem;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
 .portfolios .portfolio-item .hover-items .icons {
   display: -webkit-box;
   display: -ms-flexbox;
