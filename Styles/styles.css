@@ -301,7 +301,9 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 18rem;
+  padding-right: 15rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
 
 .header-content .right-header .name {

@@ -195,6 +195,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 100vh;
+    
 
     .left-header {
         display: flex;
@@ -241,7 +242,9 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 18rem;
+        padding-right: 15rem;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
 
         .name {
             font-size: 3rem;
