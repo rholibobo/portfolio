@@ -821,7 +821,7 @@ section {
     margin: 0.8rem 1.3rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .sec1 {
     padding: 7rem 0 !important;
   }
