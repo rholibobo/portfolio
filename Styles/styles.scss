@@ -62,7 +62,6 @@ header {
     font-family: 'Poppins', sans-serif;
     color: var(--color-white);
     overflow: hidden;
-    
 }
 
 section {
@@ -83,7 +82,6 @@ section {
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
-    // background-color: rgb(213, 70, 31);
 }
 
 .sec2 {
@@ -125,6 +123,45 @@ section {
 }
 
 // Controls
+// .controls {
+//     position: fixed;
+//     z-index: 10;
+//     top: 50%;
+//     right: 3%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     transform: translateY(-50%);
+
+//     .active-btn {
+//         background-color: var(--color-secondary) !important;
+//         transition: all 0.4s ease-in-out;
+//         i {
+//             color: var(--color-white);
+//         }
+//     }
+
+//     .control {
+//         padding: 1rem;
+//         cursor: pointer;
+//         background-color: var(--color-grey-4);
+//         width: 55px;
+//         height: 55px;
+//         border-radius: 50%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin: .7rem 0;
+//         box-shadow: var(--box-shadow-1);
+
+//         i {
+//             font-size: 1.2rem;
+//             color: var(--color-grey-2);
+//             pointer-events: none;
+//         }
+//     }
+// }
 .controls {
     position: fixed;
     z-index: 10;
@@ -135,36 +172,75 @@ section {
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-
+  
     .active-btn {
-        background-color: var(--color-secondary) !important;
-        transition: all 0.4s ease-in-out;
-
-        i {
-            color: var(--color-white);
-        }
+      background-color: var(--color-secondary) !important;
+      transition: all 0.4s ease-in-out;
+      i {
+        color: var(--color-white);
+      }
     }
-
+  
     .control {
-        padding: 1rem;
-        cursor: pointer;
-        background-color: var(--color-grey-4);
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: .7rem 0;
-        box-shadow: var(--box-shadow-1);
-
-        i {
-            font-size: 1.2rem;
-            color: var(--color-grey-2);
-            pointer-events: none;
+      padding: 1rem;
+      cursor: pointer;
+      background-color: var(--color-grey-4);
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.7rem 0;
+      box-shadow: var(--box-shadow-1);
+      position: relative;
+  
+      i {
+        font-size: 1.2rem;
+        color: var(--color-grey-2);
+        pointer-events: none;
+      }
+  
+      .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        font-size: 12px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+  
+        /* Positioning */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 10px;
+  
+        /* Fade-in effect */
+        opacity: 0;
+        transition: opacity 0.3s, visibility 0.3s;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: black transparent transparent transparent;
         }
+      }
+  
+      &:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
     }
-}
+  }
 
 .theme-btn{
     top: 5%;
@@ -391,19 +467,19 @@ section {
                 }
 
                 .javascript {
-                    width: 85%;
+                    width: 90%;
                 }
 
                 .react {
-                    width: 80%;
+                    width: 90%;
                 }
 
                 .node {
-                    width: 70%;
+                    width: 80%;
                 }
 
                 .db {
-                    width: 70%;
+                    width: 80%;
                 }
             }
         }
@@ -596,10 +672,13 @@ section {
             line-height: 1.5rem;
         }
         .contact-info{
+            width: 40%;
+            margin: 0 auto;
             .contact-item{
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
+                
                 p{
                     margin: .3rem 0 !important;
                     padding: 0 !important;

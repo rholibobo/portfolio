@@ -32,6 +32,11 @@
             margin-left: 0;
             margin-top: 2.5rem;
         }
+        .left-contact{
+            .contact-info{
+                width: 100%;
+            }
+        }
     }
 
     .contact-content-con .right-contact .i-c-2{
@@ -62,13 +67,14 @@
         top: auto;
         bottom: 0;
         flex-direction: row;
-        justify-content: center;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
         background-color: var(--color-grey-5);
         .control{
             margin: .8rem .3rem;
+            width: 50px;
+            height: 50px;
         }
     }
 }
