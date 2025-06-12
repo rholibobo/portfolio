@@ -67,7 +67,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 2rem 18rem;
+  padding: 2rem 8rem;
 }
 
 .section {
@@ -246,10 +246,10 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   transition: var(--transition);
-  filter: grayscale(0.8);
+  filter: grayscale(0);
 }
 .header-content .left-header .image img:hover {
-  filter: grayscale(0);
+  filter: grayscale(0.8);
 }
 .header-content .right-header {
   display: flex;
@@ -556,7 +556,7 @@ section {
   line-height: 1.5rem;
 }
 .contact-content-con .left-contact .contact-info {
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
 }
 .contact-content-con .left-contact .contact-info .contact-item {
